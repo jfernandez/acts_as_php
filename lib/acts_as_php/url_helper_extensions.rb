@@ -7,7 +7,7 @@ module ActsAsPhp
 
       def url_for_with_php(options = {})
         url = url_for_without_php(options)
-        url << '.php'
+        url << '.php' unless url.blank? || url.length == 1
       end
     end
   end
@@ -27,7 +27,7 @@ module ActsAsPhp
           else
             self.url_for(options)
           end
-        url << ".php" unless url[-4..-1] == '.php'
+        url << ".php" unless url.blank? || url.length == 1 || url[-4..-1] == '.php'
 
         if html_options
           html_options = html_options.stringify_keys
