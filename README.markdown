@@ -1,14 +1,16 @@
-# Goal
+# ActsAsPhp
 
-To create the most useless Rails plugin ever.
+Goal: To create the most useless Rails plugin ever.
 
-## Installation
+## Instructions
+
+* Using Rails 2.1
 
 <pre>
 ./script/plugin install git://github.com/jfernandez/acts_as_php.git
 </pre>
 
-or clone repo into your `RAILS_ROOT/vendor/plugins` folder
+* Restart your server and enjoy your new routes ~ welcome back to 2003.
 
 ## Inspiration
 
